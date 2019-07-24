@@ -42,7 +42,7 @@ def find_a(array)
 end
 
 def sum_array(array)
-  (array[0]..array[-1]).inject(:+)
+  array.inject(0){|sum, element|sum + element}
 end
 
 def add_s()
