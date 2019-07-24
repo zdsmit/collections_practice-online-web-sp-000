@@ -29,13 +29,16 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  array.collect do |index|
+  array.each do |index|
+    name_list = []
     index[2] = "$"
+    name_list << index
+    name_list
   end
 end
 
-def find_a()
-
+def find_a(array)
+  array.select {|element|element.start_with?("a")}
 end
 
 def sum_array()
