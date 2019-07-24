@@ -45,6 +45,10 @@ def sum_array(array)
   array.inject(0){|sum, element|sum + element}
 end
 
-def add_s()
-
+def add_s(array)
+  array.each_with_index.collect do |element, index|
+    unless index == 1
+      element << "s"
+    end
+  end
 end
